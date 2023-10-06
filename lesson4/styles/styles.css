@@ -1,0 +1,42 @@
+*{
+    border: 2px solid blue;
+}
+
+img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+p, main, h1{
+    text-align: center;
+}
+
+p{
+    background-color: red;
+}
+
+.mypara{
+    background-color: blue;
+}
+
+#byui{
+    background-color: purple;
+}
+
+p.mypara{
+    background-color: red;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+
+a:link, a:visited{
+    color: green;
+}
+
+/* p:nth-child(2){
+    border-color: solid blue;
+} */
