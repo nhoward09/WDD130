@@ -1,4 +1,8 @@
-div.content{
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rock+Salt&display=swap');
+/* --heading-font: "Rock Salt"; */
+/* --paragraph-font: Indie Flower, Helvetica, sans-serif; */
+
+#content{
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -24,14 +28,28 @@ main section{
     color: #63412C;
 }
 
+main section img{
+    box-sizing: border-box; 
+}
+
 #background{
     height: 725px;
+    background-color: #90E0EF;
 }
 
 body {
     background-color: #CAF0F8;
     color: #63412C;
+    font-family: Indie Flower, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+
+h2{
+    margin: 0;
+}
+
 header {
     background-color:#90E0EF;
     color: #63412C;
@@ -40,23 +58,30 @@ nav a{
     background-color: #90E0EF;
     color: #63412C;
     text-decoration: none;
+    padding: 35px;
 }
+
 nav a:hover {
     background-color: #0096C7;
     color: #DDB892;
 }
+
 .book{
     background-color:  #CAF0F8;
     color: #023E8A;
     text-decoration: none;
-
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join{
     background-color: #90E0EF;
     color: black;
     text-decoration: none;
-
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join:hover{
@@ -77,10 +102,13 @@ nav a:hover {
 .msg{
     background-color: #90E0EF;
     color: #63412C;
+    padding: 35px;
 }
 
 footer{
     background-color: #CAF0F8;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
@@ -100,12 +128,41 @@ footer p a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
     width: 80px;
+    padding-bottom: 25px;
+}
+
+#logo_link{
+    padding-top: 5px;
 }
 
 #hero-img{
     width: 100%;
+}
+
+.home-title{
+    color: #63412C;
+    font-family: "Rock Salt";
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.msg p{
+    padding-bottom: 15px;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid #63412C;
 }
