@@ -1,0 +1,16 @@
+summary {
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+}
+
+details {
+  border: 3px solid blue;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+details[open] summary {
+  background-color: brown;
+}

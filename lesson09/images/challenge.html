@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .card{
+            background-color: white;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card img{
+            width: 100%;
+        }
+
+        .stats{
+            background-color: darkblue;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100px;
+            /* grid-template-rows: 30px 30px ; */
+            align-content: center;
+        }
+
+        .stat{
+            color: white;
+            border-right: grey 1px solid;
+        }
+
+        .stat p{
+            margin-block-start: 0;
+            margin-block-end: 0;
+            text-align: center;
+        }
+
+        .stat p:first{
+            font-size: 1.5rem;
+        }
+
+        .stat p:nth-child(2){
+            font-size: .8rem;
+        }
+
+        .stats div:nth-child(3){
+            border:none;
+        }
+
+        .post-time{
+            text-align: center;
+        }
+
+        .post-heading{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .post-content{
+            text-align: center;
+            margin: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="card">
+        <img src="w09_ice_img.jpg" alt="cityscape">
+        <p class="post-time">3 Weeks ago</p>
+        <p class="post-heading">Post Three</p>
+        <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia tempora, error debitis, officiis inventore atque, consectetur fugiat dignissimos nobis distinctio doloribus repellendus rem veritatis dolorum omnis molestiae in praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis repudiandae dolore nesciunt ipsam eligendi sunt est obcaecati non neque nihil temporibus in vel, ex possimus, ducimus minima sint id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident esse aut, recusandae vero placeat accusamus reiciendis nisi? Soluta reprehenderit ea nisi ipsam delectus labore debitis quasi ullam reiciendis placeat.</p>
+        <div class="stats">
+            <div class="stat">
+                <p>5<sup>m</sup></p>
+                <p>READ</p>
+            </div>
+
+            <div class="stat">
+                <p>2031</p>
+                <p>VIEWS</p>
+            </div>
+
+            <div class="stat">
+                <p>15</p>
+                <p>COMMENTS</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

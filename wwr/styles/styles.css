@@ -55,7 +55,7 @@ main section img{
 
 #background{
     height: 725px;
-    background-color: #90E0EF;
+    background-color: #DDB892;
     grid-column: 1/11;
     grid-row: 4/9;
 }
@@ -79,25 +79,40 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
+
 nav a{
-    /* background-color: #90E0EF; */
+    background-color:  rgba(55, 104, 55, 0.85);
     color: yellowgreen;
+    font-weight: bold;
     text-decoration: none;
     padding: 35px;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px lightslategray;
 }
 
+
+
 nav a:hover {
-    background-color: green;
+    background-color:  #1a832f99;
     color: #CAF0F8;
+    transform: scale(1.1);
+    transition: transform .5s;
 }
 
 .book{
-    background-color:  #3f8f74;
+    background-color:  rgba(55, 104, 55, 0.85);
     color: yellowgreen;
     text-decoration: none;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px lightslategray;
+}
+
+.book:hover{
+    background-color: #1a832f99;
+    color: #DDB892;
 }
 
 .join{
@@ -112,15 +127,13 @@ nav a:hover {
 .join:hover{
     background-color: #023E8A;
     color: #DDB892;
+    opacity: .6;
 }
 
-.book:hover{
-    background-color: #1a832f;
-    color: #63412C;
-}
+
 
 #background{
-    background-color: white;
+    background-color: #CAF0F8;
     color: #63412C;
 }
 
@@ -151,6 +164,7 @@ footer a{
 footer a:hover{
     background-color: #90E0EF;
     color: #63412C;
+    border-radius: 5px;
 }
 
 footer p a:hover {
@@ -169,19 +183,16 @@ footer p a:hover {
 
 #logo_link{
     padding-top: 5px;
-    padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
-
-
 
 #hero-img{
     width: 100%;
 }
 
 .home-title{
-    color: #a16946;
+    color: #835c44;
     font-family: "Rock Salt";
     font-size: 2em;
     margin-top: 10px;
@@ -215,8 +226,10 @@ footer .social img{
 }
 
 .mountains {
+    width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .card-img{
@@ -238,6 +251,74 @@ footer .social img{
 .card-img, .mountains {
     width: 100%;
 }
+
+
+/* faq page */
+.faq-main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  summary {
+    background-color: #63412C;
+    color: #CAF0F8;
+    cursor: pointer;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+  }
+  
+  summary:hover {
+    background-color: rgb(55, 104, 55);
+    border-radius: 5px;
+    transform: scale(1.03);
+    border: 3px solid #023E8A;
+    margin: 10px;
+    transition: background-color 0.3s, border-radius 0.3s, transform 0.3s ease-in-out;
+  }
+  
+  .photo-cred p {
+    font-size: 12px;
+    margin: 5px;
+  }
+  
+  details {
+    background-color: #6f736499;
+    border: 3px solid #023E8A;
+    border-radius: 15px;
+    margin: 10px;
+
+    transition: background-color 0.5s, border-radius 0.5s, font-weight 0.5s;
+  }
+  
+  details[open] summary {
+    background-color: rgb(55, 104, 55);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .answer-list {
+    text-align: left;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    transition: 0.5s;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+
+  .bullet-heads {
+    font-weight: 1000;
+    font-size: 1.2em;
+  }
+  
+  .answer {
+    /* font-weight: bold; */
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
