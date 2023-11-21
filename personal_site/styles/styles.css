@@ -3,74 +3,80 @@
 #content{
     max-width: 1600px;
     margin: 0 auto;
-    /* background-color: #585966; */
 }
 
-.navbar {
+
+/* header stuff */
+
+header {
     display: grid;
+    height: 10vw;
     grid-template-columns: 1fr 3fr 1fr;
     justify-content: space-between;
     align-items: center;
     background-color: #32303c99;
     border-radius: 15px;
-
+    z-index: 0;
+    padding-left: 3vw;
+    padding-right: 2.5vw;
   }
 
-.brand-name{
+.logo{
+  width: 8vw;
+  z-index: 0;
+  padding-bottom: 2vw;
+  border-radius: 50%;
+  /* box-shadow: 4px 4px 12px black; */
+}
+
+h1 {
     align-items: center;
     text-align: center;
     color: #E7BA7C;
+    text-shadow: 4px 4px 12px black;
+    font-size: 3vw;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 0;
+    padding-bottom: 5vw;
+}
+
+h4 {
+  color: #999;
+  font-size: 1.8vw;
+  text-shadow: 4px 4px 12px black;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+  z-index: 0;
 }
 
 nav{
     justify-self: right;
-    padding-right: 20px;
-    position: absolute;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+    position: relative;
     align-items: center;
 
 }
 
 #hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -150px;
+  position: relative;
+  z-index: -1;
+  margin-top: -240px;
 }
 
-#hero-box {    
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
+#hero-img {
+  width: 98.3vw; /* Adjust this value to control the width of the image within the #hero container */
+  max-width: 100vw; /* Ensure the image doesn't exceed its original size */
+  height: auto; /* Maintain the aspect ratio when resizing */
+  z-index: -1;
+  align-items: center;
 }
 
-.hero-img-credit{
-    text-align: right;
-    padding-right: 20px;
-}
-
-#hero-img{
-    width: 100%;
-}
-
-#hero-msg{
-    grid-column: 2/3;
-    grid-row: 1/4;
-    text-align: center;
-    color: #999;
-    font-size: 5em;
-    padding-top: 50px;
-    text-shadow: 4px 4px 12px black;
-    text-
-}
-
-.about{
-    font-size: 1rem;
-    position: absolute;
-    /* top: 0; */
-}
-
-.logo{
-    width: 140px;
-}
+/* Footer stuff */
 
 footer{
     background-color: #32343C;
@@ -99,17 +105,16 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+p.copyrights{
+  color: #999;
+}
+
+/* main body stuff */
+
 body{
     background-color: #585966;
     color: black;
 }
-
-p.copyrights{
-    color: #999;
-}
-
-
-
 
 
 
@@ -122,101 +127,107 @@ p.copyrights{
 
 /* Button styling */
 .btn {
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    transition: all 0.5s ease-in-out;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    background: #040f16;
-    color: #f5f5f5;
-    grid-column: 2/3;
-    position: relative; /*Added for positioning .icon and .text */
-  }
-  
-  /* Hover effect */
-  .btn:hover {
-    box-shadow: 0 0 20px 0px #2e2e2e3a;
-  }
-  
-  /* Icon styling */
-  .btn .icon {
-    position: absolute;
-    height: 40px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-  }
-  
-  /* Text styling */
-  .btn .text {
-    transform: translateX(55px);
-    transition: all 0.5s; /* Added transition for opacity change */
-    opacity: 1; /* Added initial opacity value */
-  }
-  
-  /* Hover effect for icon width */
-  .btn:hover .icon {
-    width: 175px;
-  }
-  
-  /* Hover effect for text opacity */
-  .btn:hover .text {
-    opacity: 0;
-  }
-  
-  /* Focus state */
-  .btn:focus {
-    outline: none;
-  }
-  
-  /* Active state */
-  .btn:active .icon {
-    transform: scale(0.85);
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  /* Dropdown styling */
-.dropdown {
-    position: relative;
-    display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+  grid-column: 2/3;
+  position: relative; /*Added for positioning .icon and .text */
 }
+
+/* Hover effect */
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+/* Icon styling */
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+/* Text styling */
+.btn .text {
+  transform: translateX(55px);
+  transition: all 0.5s; /* Added transition for opacity change */
+  opacity: 1; /* Added initial opacity value */
+}
+
+/* Hover effect for icon width */
+.btn:hover .icon {
+  width: 175px;
+}
+
+/* Hover effect for text opacity */
+.btn:hover .text {
+  opacity: 0;
+}
+
+/* Focus state */
+.btn:focus {
+  outline: none;
+}
+
+/* Active state */
+.btn:active .icon {
+  transform: scale(0.85);
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+/* Dropdown styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #040f16;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    z-index: 1;
-    top: 100%;
-    width: 150px; /*Adjust width as needed */
+  display: none;
+  position: absolute;
+  background-color: #040f16;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+  top: 100%;
+  width: 150px; /*Adjust width as needed */
 }
+
 
 .dropdown-content a {
-    color: #f5f5f5;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-    transition: background-color 0.3s;
+  color: #f5f5f5;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
+
 .dropdown-content a:hover {
-    background-color: #2e2e2e;
+  background-color: #2e2e2e;
 }
+
 
 /* Show the dropdown content when the button is clicked */
 .dropdown.active .dropdown-content {
-    display: block;
+  display: block;
 }
 
 
@@ -227,6 +238,10 @@ p.copyrights{
     .navbar {
       flex-direction: column; /* Stack items vertically on smaller screens */
       align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+
+    #text {
+      display: none;
     }
 
     nav{
