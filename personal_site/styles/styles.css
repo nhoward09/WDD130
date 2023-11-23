@@ -17,7 +17,7 @@ header {
     background-color: #32303c99;
     border-radius: 15px;
     z-index: 0;
-    padding-left: 3vw;
+    padding-left: 2.5vw;
     padding-right: 2.5vw;
   }
 
@@ -74,7 +74,26 @@ nav{
   height: auto; /* Maintain the aspect ratio when resizing */
   z-index: -1;
   align-items: center;
+  border-radius: 5px;
 }
+
+.hero-img-credit{
+  text-align: right;
+  padding-right: 25px;
+}
+
+.hero-img-credit-link {
+  text-decoration: none;
+  color: #999;
+  text-shadow: 5px 5px 10px #040f16;
+}
+
+.hero-img-credit-link:hover {
+  background-color: #040f16;
+  color: #E7BA7C;
+  border-radius: 5px;
+}
+
 
 /* Footer stuff */
 
@@ -117,11 +136,168 @@ body{
 }
 
 
+/* section one stuff */
+.abt_products {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 4fr 1fr 3fr 1fr;
+  padding-top: 50px;
+}
 
+.disc_golf_cart {
+  grid-column: 2/3;
+  width: 120%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 50px #040f16;
 
+}
 
+.about_gear {
+  position: relative;
+  z-index: 1;
+  grid-row: 1/2;
+  grid-column: 3/5;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #32303c;
+  padding: 40px;
+  padding-top: 60px;
+  font-size: 1.6vw;
+  color: #999;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px #040f16;
+}
 
+.about_gear_link{
+  text-decoration: none;
+  grid-row: 1/2;
+  grid-column: 3/5;
+  z-index: 2;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 7%;
+  font-size: 1.6vw;
+  background-color: #406887;
+  color: #E7BA7C;
+  border-radius: 0 0 5px 5px;
+}
 
+.gear-title {
+  position: relative;
+  z-index: 2;
+  grid-row: 1/2;
+  grid-column: 3/5;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.5vw;
+  color: #E7BA7C;
+  padding-top: 15px;
+}
+
+.photo_cred_cart {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  text-align: center;
+  margin: 5px;
+}
+
+.photo_cred_cart_link {
+  text-decoration: none;
+  color: #999;
+  text-shadow: 5px 5px 10px #040f16;
+}
+
+.photo_cred_cart_link:hover {
+  background-color: #040f16;
+  color: #E7BA7C;
+  border-radius: 5px;
+}
+
+/* section 2 */
+.abt_company {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 4fr 1fr;
+  padding-top: 50px;
+}
+
+.company_photo {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 50px #040f16;
+}
+
+.about_owners {
+  position: relative;
+  z-index: 1;
+  grid-row: 1/2;
+  grid-column: 2/4  ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #32303c;
+  padding: 40px;
+  padding-top: 80px;
+  font-size: 1.6vw;
+  color: #999;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px #040f16;
+}
+
+.about_owners_link{
+  text-decoration: none;
+  grid-row: 1/2;
+  grid-column: 2/4;
+  z-index: 2;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 6%;
+  font-size: 1.5vw;
+  background-color: #406887;
+  color: #E7BA7C;
+  border-radius: 0 0 7px 7px;
+}
+
+.about_owners_link:hover, .about_gear_link:hover{
+  background-color: #585966;
+}
+
+.owners_title {
+  position: relative;
+  z-index: 2;
+  grid-row: 1/2;
+  grid-column: 2/4;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.5vw;
+  color: #E7BA7C;
+  padding-top: 15px;
+}
+
+.photo_cred_company {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  margin: 5px;
+}
+
+.photo_cred_company_link {
+  text-decoration: none;
+  color: #999;
+  text-shadow: 5px 5px 10px #040f16;
+  transition: transform .5s;
+}
+
+.photo_cred_company_link:hover {
+  background-color: #040f16;
+  color: #E7BA7C;
+  border-radius: 5px;
+}
 
 
 
