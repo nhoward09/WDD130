@@ -133,6 +133,7 @@ p.copyrights{
 body{
     background-color: #585966;
     color: black;
+    font-size: large;
 }
 
 
@@ -164,10 +165,10 @@ body{
   background-color: #32303c;
   padding: 40px;
   padding-top: 60px;
-  font-size: 1.6vw;
   color: #999;
   border-radius: 25px;
   box-shadow: 10px 5px 5px #040f16;
+  font-size: 1.5vw;
 }
 
 .about_gear_link{
@@ -181,7 +182,7 @@ body{
   font-size: 1.6vw;
   background-color: #406887;
   color: #E7BA7C;
-  border-radius: 0 0 5px 5px;
+
 }
 
 .gear-title {
@@ -196,10 +197,10 @@ body{
   padding-top: 15px;
 }
 
-.photo_cred_cart {
+.photo_cred_cart, .photo_cred_company {
   grid-column: 3/5;
   grid-row: 2/3;
-  text-align: center;
+  text-align: right;
   margin: 5px;
 }
 
@@ -207,7 +208,7 @@ body{
   text-decoration: none;
   color: #999;
   text-shadow: 5px 5px 10px #040f16;
-}
+  }
 
 .photo_cred_cart_link:hover {
   background-color: #040f16;
@@ -229,6 +230,7 @@ body{
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 50px #040f16;
+  text-align: center;
 }
 
 .about_owners {
@@ -247,6 +249,7 @@ body{
   color: #999;
   border-radius: 25px;
   box-shadow: 10px 5px 5px #040f16;
+  font-size: 1.3vw;
 }
 
 .about_owners_link{
@@ -256,11 +259,11 @@ body{
   z-index: 2;
   text-align: center;
   margin-top: auto;
-  margin-bottom: 6%;
+  margin-bottom: 7%;
   font-size: 1.5vw;
   background-color: #406887;
   color: #E7BA7C;
-  border-radius: 0 0 7px 7px;
+
 }
 
 .about_owners_link:hover, .about_gear_link:hover{
@@ -280,10 +283,7 @@ body{
 }
 
 .photo_cred_company {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  text-align: center;
-  margin: 5px;
+  padding-top: 10px;
 }
 
 .photo_cred_company_link {
